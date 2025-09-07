@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/bg-kejati.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column; /* teks di bawah logo */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 100, 0, 0.85); /* hijau transparan */
+  color: white;
+}
+
+header .logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+header .judul-header h1,
+header .judul-header h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+header .judul-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header .judul-header h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* Container scroll */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 75vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: darkgreen;
+  border-bottom: 2px solid green;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+/* Card Pegawai */
+.card {
+  background: #43a047; /* hijau */
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px; /* kotak dengan sudut sedikit melengkung */
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Tambahkan style untuk jabatan */
+.card .jabatan {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffeb3b; /* kuning biar kontras, bisa diganti */
+  margin-bottom: 5px;
+}
+
